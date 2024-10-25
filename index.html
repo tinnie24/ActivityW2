@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="w3-container form-container">
+  <h2>Contact Us</h2>
+  <form>
+    
+    <!-- Full Name -->
+    <label for="name"><i class="fa fa-user"></i> Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3">
+    
+    <!-- Email Field -->
+    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <!-- Phone Number -->
+    <label for="phone"><i class="fa fa-phone"></i> Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+    
+    <!-- Subject Field  -->
+    <label for="subject"><i class="fa fa-tag"></i> Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Enter subject" maxlength="100" required>
+    
+    <!-- How Did You Hear About Us -->
+    <label for="source"><i class="fa fa-info-circle"></i> How did you hear about us?</label>
+    <select id="source" name="source">
+      <option value="google">Google</option>
+      <option value="friends">Friends</option>
+      <option value="ads">Ads</option>
+      <option value="others">Others</option>
+    </select>
+    
+    <!-- Message Field  -->
+    <label for="message"><i class="fa fa-pencil"></i> Message</label>
+    <textarea id="message" name="message" placeholder="Write your message"></textarea>
+    
+    <!-- File Upload Field -->
+    <label for="upload"><i class="fa fa-paperclip"></i> Upload your document (CV):</label>
+    <input type="file" id="upload" name="upload" accept=".pdf,.doc,.docx">
+    
+    <!-- Submit Button -->
+    <button type="submit" class="submit-btn"><i class="fa fa-paper-plane"></i> Send Message</button>
+
+  </form>
+</div>
+
+</body>
+</html>
